@@ -11,5 +11,15 @@
 |
 */
 Route::get('/', ['uses' => 'Controller@homepage']);
-Route::get('/login', ['uses' => 'Controller@login']);
+
+/**
+*Rotas para autenticação do usuario
+*==============================================================================
+*/
+Route::get('/login', ['uses' => 'Controller@fazerLogin']);
+Route::post('/login', ['as' => 'user.login','uses' => 'Controller@login']);
+
+
+
+
 Route::get('/cadastro', ['uses' => 'Controller@cadastrar']);

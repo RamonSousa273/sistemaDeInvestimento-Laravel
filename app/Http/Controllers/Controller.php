@@ -18,8 +18,8 @@ class Controller extends BaseController
     public function cadastrar(){
       echo "Tela de cadastro";
     }
-    public function login(){
-      echo "Tela de login";
+    public function fazerLogin(){
+      return view('user.login');
     }
 
 }
